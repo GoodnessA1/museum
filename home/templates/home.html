@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/home.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="header">DIGITAL MUSEUM</h1>
+        <div id="container">
+            <div id="header"></div>
+            <div class="body">
+                <div class="d1">
+                    <div id="d1">
+                        <h3 id="h3">GET CERTIFIED</h3>
+                        <a href="http://w3schools.com">
+                            Study Web technologies<br>
+                            and get a diploma<br>
+                            at w3schools
+                        </a>
+                    </div>
+                    <div id="d2">
+                        <form method="post">
+                            <button value="logout">LOGOUT</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="d2">
+                    <h3>PROJECT WORK</h3>
+                    <a  href={{ url_for('home_bp.friends') }}><img src="/static/one.png"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

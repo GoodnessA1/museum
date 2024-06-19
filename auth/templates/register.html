@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="/static/style.css" class="stylesheet">
+    </head>
+    <body>
+
+        <div class="container">
+            <h1 class="header">DIGITAL MUSEUM</h1><br><br>
+            <div class="form">
+                <h1 id="log">REGISTER</h1>
+                {% if error %}
+                    <h3 class="error">{{ error }}</h3>
+                {% endif %}
+                <form method="post">
+                    <fieldset>
+                        <label for="username">Username:</label>
+                        <input type="text" name="username" id="username" required>
+                    </fieldset>
+                    <fieldset>
+                        <label for="password">Password:</label>
+                        <input type="password" name="password" id="password" required>
+                    </fieldset>
+                    <fieldset>
+                        <label for="firstname">Firstname:</label>
+                        <input type="text" name="firstname" id="firstname" required>
+                    </fieldset>
+                    <fieldset>
+                        <label for="lastname">Lastname:</label>
+                        <input type="text" name="lastname" id="lastname" required>
+                    </fieldset>
+                    <fieldset>
+                        <label for="age">Age:</label>
+                        <input type="number" name="age" id="age" required>
+                    </fieldset>
+                    <fieldset>
+                        <label for="phonenumber">Phone number:</label>
+                        <input type="text" name="phonenumber" id="phonenumber" required>
+                    </fieldset>
+                    <fieldset>
+                        <label for="sex">Sex:</label>
+                        <select name="sex" required>
+                            <option value=" Male"> Male</option>
+                            <option value="Female">FEMALE</option>
+                            <option value="none">RATHER NOT SAY</option>
+                        </select>
+                    </fieldset>
+                    <input type="submit" value="submit">
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

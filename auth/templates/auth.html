@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href='/static/style.css'>
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="header">DIGITAL MUSEUM</h1>
+            <div class="form">
+                <h1 id="log">Sign in</h1>
+
+                {% if error %}
+                    <h3 class="error">{{ error }}</h3>
+                {% endif %}
+                <form method="post">
+                    <fieldset>
+                        <label for="username">Username:</label>
+                        <input type="text" name="username" id="username">
+                    </fieldset>
+                   <fieldset>
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" id="password">
+                   </fieldset>
+                    <input id="submit" value="Submit" type="submit">
+                </form>
+                <br>
+                <a href={{ url_for('auth_bp.signup') }}>CREATE AN ACCOUNT HERE</a>
+            </div>
+        </div>
+    </body>
+</html>
