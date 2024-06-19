@@ -7,4 +7,5 @@
 
 ## FILES
 ` app.py: contains flask app, and registers all blueprint`
+
 `model.py: Creates the table for the database connection`
